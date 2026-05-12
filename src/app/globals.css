@@ -1,0 +1,94 @@
+@import "tailwindcss";
+
+:root {
+  --background: #050505;
+  --foreground: #fdfdfd;
+  --primary: #c5a059;
+  --primary-foreground: #050505;
+  --secondary: #121212;
+  --secondary-foreground: #fdfdfd;
+  --accent: #4a0e0e;
+  --accent-foreground: #fdfdfd;
+  --muted: #1a1a1a;
+  --muted-foreground: #a1a1aa;
+  --border: #27272a;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-border: var(--border);
+  
+  --font-serif: var(--font-cormorant);
+  --font-sans: var(--font-inter);
+}
+
+* {
+  border-color: var(--border);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  overflow-x: hidden;
+  scrollbar-width: thin;
+  scrollbar-color: var(--primary) transparent;
+}
+
+::selection {
+  background-color: var(--primary);
+  color: var(--primary-foreground);
+}
+
+/* Custom smooth scroll - Removed scroll-behavior: smooth as it conflicts with Lenis */
+html {
+  /* scroll-behavior: smooth; */
+}
+
+/* GSAP/Framer related helpers */
+.reveal-text {
+  overflow: hidden;
+}
+
+.reveal-text-line {
+  display: block;
+}
+
+.luxury-gradient {
+  background: linear-gradient(135deg, #c5a059 0%, #ecd4a1 50%, #c5a059 100%);
+}
+
+.glass {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.noise::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 9999;
+  opacity: 0.03;
+  background-image: url("https://grainy-gradients.vercel.app/noise.svg");
+}
+
+.text-mask {
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
