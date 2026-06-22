@@ -1,36 +1,78 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Luxury Cuisine
 
-## Getting Started
+### A Modern Luxury Dining Experience
 
-First, run the development server:
+Built with Next.js, TypeScript and modern web technologies to deliver a premium restaurant experience.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+**Live Site:** https://luxury-cuisine.vercel.app
+
+---
+
+## Overview
+
+Luxury Cuisine is a modern restaurant website focused on elegant design, smooth interactions and a refined user experience. The project combines contemporary web technologies with high-end visual presentation to create a digital experience that reflects the quality and sophistication of luxury dining.
+
+The website is fully responsive and optimized for performance across desktop, tablet and mobile devices.
+
+---
+
+## Features
+
+- Modern and elegant user interface
+- Fully responsive design
+- Smooth scrolling experience
+- High-performance animations
+- Component-based architecture
+- Type-safe development with TypeScript
+- Optimized for speed and accessibility
+- Built using the latest Next.js App Router
+
+---
+
+## Technology Stack
+
+### Frontend
+
+- Next.js 16
+- React 19
+- TypeScript
+
+### Styling
+
+- Tailwind CSS 4
+
+### Animation & Interaction
+
+- Framer Motion
+- GSAP
+- Lenis
+
+### UI Utilities
+
+- Lucide React
+
+### Deployment
+
+- Vercel
+
+---
+
+## Project Structure
+
+```text
+luxury_cuisine/
+├── public/
+├── src/
+│   ├── app/
+│   ├── components/
+│   ├── sections/
+│   └── lib/
+├── package.json
+├── next.config.ts
+├── tsconfig.json
+└── README.md
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Note
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+This website was built for demonstration only.
